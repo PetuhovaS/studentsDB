@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+ <html lang="uk">
+
+   <head>
+     <meta charset="UTF-8"/>
+     <title>Сервіс обліку студентів</title>
+     <meta name="description"
+           value="Система обліку студентів навчального закладу" />
+
+     <!-- Include Styles -->
+     <link rel="stylesheet"
+           href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./css/main.css">
+
+     <!--<style type="text/css">.col-xs-12, .col-xs-4, .col-xs-8 {border:1px solid #f2fffa;}</style>-->
+
+   </head>
+
+   <body>
+
+     <!-- Start Container -->
+     <div class="container">
+
+       <!-- Star Header -->
+       <div class="row" id="header">
+
+         <!-- Logo -->
+         <div class="col-xs-12">
+           <h1>Форма редагування Студента</h1>
+         </div>
+
+         <!-- Redact Student Form -->
+         <div class="col-xs-12">
+           <div class="col-xs-2" id="redact_form">
+             <p>Ім'я*</p>
+           </div>
+
+           <div class="col-xs-10">
+             <input placeholder="Вкажіть ім'я тут" type="text" size="30">
+           </div>
+         </div>
+
+         <div class="col-xs-12">
+           <div class="col-xs-2" id="redact_form">
+             <p>По батькові</p>
+           </div>
+
+           <div class="col-xs-10">
+             <input placeholder="Вкажіть по-батькові тут" type="text" size="30">
+           </div>
+         </div>
+
+         <div class="col-xs-12">
+           <div class="col-xs-2" id="redact_form">
+             <p>Прізвище*</p>
+           </div>
+
+           <div class="col-xs-10">
+             <input placeholder="Вкажіть прізвище тут" type="text" size="30">
+           </div>
+         </div>
+
+         <div class="col-xs-12">
+           <div class="col-xs-2" id="redact_form">
+             <p>№ Білету*</p>
+           </div>
+
+           <div class="col-xs-10">
+             <input placeholder="Вкажіть № білету тут" type="text" size="30">
+           </div>
+         </div>
+
+         <div class="col-xs-12">
+           <div class="col-xs-2" id="redact_form">
+             <p>Дата народження</p>
+           </div>
+
+           <div class="col-xs-10">
+             <input placeholder="Вкажіть дату народження тут" type="text" size="30">
+           </div>
+         </div>
+
+         <div class="col-xs-12">
+           <div class="col-xs-2" id="redact_form">
+             <p>Фото</p>
+           </div>
+
+           <div class="col-xs-10">
+             <p>Наразі: <a href="star wars">Адреса зоббраження</a></p>
+             <p>Очистити</p>
+             <p>Змінити <button class="btn btn-default" href="#">Choose File</button></p>
+           </div>
+         </div>
+
+         <div class="col-xs-12">
+           <div class="col-xs-2" id="redact_form">
+             <p>Група*</p>
+           </div>
+
+           <div class="col-xs-10" id="group-redact">
+             <select>
+               <option value="">M-11</option>
+               <option value="">M-12</option>
+               <option value="">M-13</option>
+             </select>
+           </div>
+         </div>
+
+         <div class="col-xs-12">
+           <div class="col-xs-2" id="redact_form">
+             <p>Додаткові нотатки</p>
+           </div>
+
+           <div class="col-xs-10" id="group-redact">
+             <textarea rows="5" cols="29" placeholder="Введіть текст тут"></textarea>
+           </div>
+         </div>
+       </div>
+
+        <!-- Start Footer -->
+         <div class="row" id="footer2">
+           <div class="col-xs-12">
+             <div class="col-xs-2">
+             </div>
+             <div class="col-xs-1">
+               <a class="btn btn-primary" href="students_list.html">Зберегти</a>
+             </div>
+             <div class="col-xs-9" id="skasuvaty">
+               <a href="students_list.html">Скасувати</a>
+             </div>
+           </div>
+         </div>
+         <!-- End Footer -->
+     </div>
+   </body>
