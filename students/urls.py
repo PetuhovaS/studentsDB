@@ -13,10 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+import django
 from django.conf.urls import url
 from django.contrib import admin
+from django.views import static
 
-import students
+from .settings import MEDIA_ROOT
 from students.views import students, groups
 
 urlpatterns = [
@@ -29,4 +31,7 @@ urlpatterns = [
     url(r'^groups/add/$', groups.groups_add, name='groups_add'),
     url(r'^groups/(?P<gid>\d+)/edit/$', groups.groups_edit, name='groups_edit'),
     url(r'^groups/(?P<gid>\d+)/delete/$', groups.groups_delete, name='groups_delete'),
+    url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]
+
+
