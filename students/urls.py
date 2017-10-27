@@ -24,6 +24,7 @@ from students.views import students, groups
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', students.students_list, name='home'),
+    url(r'^tem/', students.tem_502, name='tem_502'),
     url(r'^students/add/$', students.students_add, name='students_add'),
     url(r'^students/(?P<sid>\d+)/edit/$', students.students_edit, name='students_edit'),
     url(r'^students/(?P<sid>\d+)/delete/$', students.students_delete, name='students_delete'),
